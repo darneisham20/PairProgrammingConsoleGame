@@ -14,7 +14,6 @@ static void introMessage(string username)
     Console.Write(" let's begin Round One! Press enter to continue...\n");
 }
 
-// System.Console.WriteLine($"Hello {username} let's begin Round One! Press enter to continue...\n");
 Console.ReadKey();
 Console.Clear();
 
@@ -30,14 +29,14 @@ string verb = Console.ReadLine();
 Console.Clear();
 Console.Write("Please enter a number: ");
 
-try
-{
-    int input = int.Parse(Console.ReadLine());
-}
-catch (FormatException e)
-{
-    System.Console.WriteLine($"Please enter a number not a word!");
-}
+// try
+// {
+//     int input = Convert.ToInt32(Console.ReadLine());
+// }
+// catch (FormatException e)
+// {
+//     System.Console.WriteLine($"Please enter a number not a word!");
+// }
 
 int number = Convert.ToInt32(Console.ReadLine()); //converts string to an int 
 Console.Clear();
@@ -76,7 +75,6 @@ Console.Clear();
 bool keepRunning = true;
 while (keepRunning)
 {
-    // Console.WriteLine($"Hey {username} ready for Round 2? Please answer yes, no, or maybe.");
     switchResponse(username);
     static void switchResponse(string username)
     {
@@ -116,14 +114,14 @@ string adjective = Console.ReadLine();
 Console.Clear();
 Console.Write("Please enter a number: ");
 
-try
-{
-    int input = int.Parse(Console.ReadLine());
-}
-catch (FormatException e)
-{
-    System.Console.WriteLine($"Please enter a number not a word!");
-}
+// try
+// {
+//     int input = int.Parse(Console.ReadLine());
+// }
+// catch
+// {
+//     System.Console.WriteLine($"Please enter a number not a word!");
+// }
 
 int number2 = Convert.ToInt32(Console.ReadLine());
 Console.Clear();
@@ -169,7 +167,7 @@ static void countDown(string username)
     Console.ForegroundColor = ConsoleColor.White;
     Console.Write(", ready for the final round? Press enter to continue...\n");
 }
-// System.Console.WriteLine($"{username}, ready for the final round? Let's go!");
+
 Console.ReadKey();
 Console.Clear();
 
@@ -189,14 +187,14 @@ string adjective2 = Console.ReadLine();
 Console.Clear();
 Console.Write("Please enter a number: \n");
 
-try
-{
-    int input = int.Parse(Console.ReadLine());
-}
-catch (FormatException e)
-{
-    System.Console.WriteLine($"Please enter a number not a word!");
-}
+// try
+// {
+//     int input = int.Parse(Console.ReadLine());
+// }
+// catch
+// {
+//     System.Console.WriteLine($"Please enter a number not a word!");
+// }
 
 int number3 = Convert.ToInt32(Console.ReadLine());
 Console.Clear();
@@ -243,7 +241,6 @@ static void exitMessage(string username)
     Console.Write(" you completed the game! Hope you enjoyed flexing your lexicon! Play again anytime!\n");
 }
 
-// System.Console.WriteLine($"Congratulations {username} you completed the game! Hope you enjoyed flexing your lexicon! Play again anytime!");
 //class for games
 internal class Game
 {
